@@ -24,8 +24,8 @@ namespace RabbitMqConsumer
 
                 var connection = factory.CreateConnection();
 
-                binlistListener(connection);
-                testListener(connection);
+                directexchangeListener(connection);
+                //testListener(connection);
                 Console.Read();
             }
             catch (Exception ex)
@@ -34,6 +34,26 @@ namespace RabbitMqConsumer
                 Console.WriteLine(ex.Message);
                 Console.Read();
             }
+        }
+
+        public static void directexchangeListener(IConnection connection)
+        {
+            var channel = connection.CreateModel();
+
+            channel.ExchangeDeclare("nbxtran", ExchangeType.Direct);
+            channel.QueueDeclare("allTransactionsQueue", durable: true, exclusive: false, autoDelete: false, arguments: null);
+            channel.QueueBind("allTransactionsQueue", "nbxtran", "transactions.#");
+            var consumer = new EventingBasicConsumer(channel);
+            consumer.Received += (model, ea) =>
+            {
+                var body = ea.Body.ToArray();
+                var message = Encoding.UTF8.GetString(body);
+                Console.WriteLine($"Message Received on test queue - {message}");
+            };
+
+            channel.BasicConsume("test", autoAck: true, consumer);
+
+            Console.WriteLine("Listening for messages on test queue");
         }
 
         public static void testListener(IConnection connection)

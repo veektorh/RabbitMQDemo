@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victor.bolum\\Documents\\code\\git\\WalletsTest\\WalletsBinlist\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj": {}
+    "C:\\Users\\user\\Documents\\Code\\Git\\RabbitMQDemo\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victor.bolum\\Documents\\code\\git\\WalletsTest\\WalletsBinlist\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj": {
+    "C:\\Users\\user\\Documents\\Code\\Git\\RabbitMQDemo\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victor.bolum\\Documents\\code\\git\\WalletsTest\\WalletsBinlist\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\Code\\Git\\RabbitMQDemo\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj",
         "projectName": "RabbitMqConsumer",
-        "projectPath": "C:\\Users\\victor.bolum\\Documents\\code\\git\\WalletsTest\\WalletsBinlist\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj",
-        "packagesPath": "C:\\Users\\victor.bolum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victor.bolum\\Documents\\code\\git\\WalletsTest\\WalletsBinlist\\RabbitMqConsumer\\RabbitMqConsumer\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\Code\\Git\\RabbitMQDemo\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\Code\\Git\\RabbitMQDemo\\RabbitMqConsumer\\RabbitMqConsumer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\victor.bolum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://13.90.93.249/NugetGallery/api/v1/FeedService.svc": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.wallets.africa/nuget/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -71,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
